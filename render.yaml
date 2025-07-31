@@ -7,3 +7,8 @@ services:
     envVars:
       - key: GEMINI_API_KEY
         sync: false
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        value: /etc/secrets/ferrous-cursor-467515-n4-0c14db8924ff.json
+    secretFiles:
+      - path: /etc/secrets/ferrous-cursor-467515-n4-0c14db8924ff.json
+        source: ferrous-cursor-467515-n4-0c14db8924ff.json
